@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info do seu personagem</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <h2>Informações sobre seu personagem</h2>
+        </div>
+        <div class="form-container">
+         <div class="form-header">
+            <p>Formulário</p>
+         </div>
+         <div class="form-body">
+            <h1 class="form-title">Preencha o formulário</h1>
+            <p>Descreva todas as características do personagem e opcionais:</p>
+            <form>
+                <div class="box-input">
+                    <label for="title">Nome do personagem:<span class="field">*</span></label>
+                    <input type="text" name="title" id="title" class="block" placeholder="Digite o nome do seu personagem" required>
+                </div>
+                <div class="box-input">
+                    <label for="world">Mundo:<span class="field">*</span></label>
+                    <input type="text" name="world" id="world" class="block" placeholder="Digite o nome do mundo" required>
+                </div>
+                <div class="box-input">
+                    <p>Vocação: <span class="field">*</span> </p>
+                    <input type="radio" name="vocation" id="elite-knight"required>
+                    <label for="radio">Elite Knight</label>
+                    <br>
+                    <input type="radio" name="vocation" id="royal-paladin"required>
+                    <label for="radio">Royal Paladin</label>
+                    <br>
+                    <input type="radio" name="vocation" id="master-sorcerer"required>
+                    <label for="radio">Master Sorcerer</label>
+                    <br>
+                    <input type="radio" name="vocation" id="elder-druid"required>
+                    <label for="radio">Elder Druid</label>
+                    <br>
+                </div>
+                <div class="box-input">
+                    <label for="level">Level:<span class="field">*</span></label>
+                    <input type="number" name="level" id="level" class="block" placeholder="Digite o lvl do seu personagem"required>
+                </div>
+                 <div class="optional-box">
+                    <p>Itens da Store:</p>
+                    <ul class="optional-list">
+                    <li>
+                        <input type="checkbox" id="dummy" name="optional[]" value="dummy">
+                        <label for="dummy">Boneco de treino</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="npc" name="optional[]" value="npc">
+                        <label for="npc">Npc de House</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="prey" name="optional[]" value="prey">
+                        <label for="prey">3º Prey slot</label>
+                    </li>
+                    </ul>
+                 </div>
+                 <div class="optional-box">
+                    <ul class="optional-list">
+                    <li>
+                        <input type="checkbox" id="charm" name="optional[]" value="charm">
+                        <label for="charm">Charm Expansion</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="gold" name="optional[]" value="gold">
+                        <label for="gold">Gold pounch</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="mailbox" name="optional[]" value="mailbox">
+                        <label for="mailbox">Mailbox</label>
+                    </li>
+                    </ul>
+                 </div>
+                 <div class="box-input">
+                    <p>Fotos do personagem:<span class="field">*</span></p>
+                    <input type="file" multiple accept="image/png, image/jpeg" id="image" name="image">
+                 </div>
+                 <input type="submit" value="Enviar" class="btn-submit">
+            </form>
+          </div>
+         </div>
+        </div>
+        <picture>
+            <img src="img/Quietz.png" alt="icon">
+        </picture>
+        <footer>
+            <p>Todos os direitos reservados ©</p>
+        </footer>
+</body>
+</html>
